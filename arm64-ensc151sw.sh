@@ -104,7 +104,8 @@ multipass exec primary -- sudo apt install -y g++ aptitude aptitude-doc-en gcc-d
 multipass exec primary -- sudo snap set system refresh.retain=2
 multipass exec primary -- sudo snap install cmake --classic
 multipass exec primary -- sudo apt-get install -y dpkg-dev --no-install-recommends
-multipass exec primary -- sudo apt install -y gtk3-binver-3.0.0
+multipass exec primary -- sudo apt install -y gtk3-binver-3.0.0 libgtk-3-dev
+
 
 # don't need this
 # multipass exec primary -- sudo apt install -y openjdk-8-jre # // do we need more (or less), like (only) openjdk-8-jre-headless
